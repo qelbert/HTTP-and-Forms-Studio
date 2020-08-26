@@ -6,10 +6,10 @@
 		function setSearchEngine () {
 			let selection = document.querySelector('input[name="engine"]:checked').value;
 			let actions = {
-				"google": "https://www.google.com/",
+				"google": "https://www.google.com/search",
 				"duckDuckGo": "https://duckduckgo.com/",
-				"bing": "https://www.bing.com/",
-				"ask": "https://www.ask.com/"
+				"bing": "https://www.bing.com/search",
+				"ask": "https://www.ask.com/web"
 			};
 
 			let selectedURL = actions[selection];
@@ -18,7 +18,6 @@
 		
 		// TODO: create a handler
     window.addEventListener("load", function(){
-		// setSearchEngine();	
 		let go = document.getElementById("goTo");
 		go.addEventListener("click", function() {
 			setSearchEngine();
